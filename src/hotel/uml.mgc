@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="hotel.dateChoose" x="436" y="397">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="hotel.dateChoose.LabelManager"
+            endpointName="lm" kind="Simple"/>
+        <Association destinationClassName="hotel.dateChoose.JP1"
+            endpointName="jp1" kind="Simple"/>
+        <Association destinationClassName="hotel.dateChoose.JP3"
+            endpointName="jp3" kind="Simple"/>
+        <Association destinationClassName="hotel.dateChoose.JP2"
+            endpointName="jp2" kind="Simple"/>
+        <Association destinationClassName="hotel.dateChoose.JP4"
+            endpointName="jp4" kind="Simple"/>
+        <Communication destinationClassName="hotel.dateChoose.MyLabel"/>
+        <Communication destinationClassName="hotel.dateChoose.LabelManager"/>
+        <Communication destinationClassName="hotel.dateChoose.JP2"/>
+        <Communication destinationClassName="hotel.dateChoose.JP1"/>
+        <Communication destinationClassName="hotel.dateChoose.JP4"/>
+        <Communication destinationClassName="hotel.dateChoose.JP3"/>
+    </Class>
+    <Class name="hotel.dateChoose.MyLabel" x="449" y="170">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="hotel.dateChoose"/>
+        <Communication destinationClassName="hotel.dateChoose.LabelManager"/>
+    </Class>
+    <Class name="hotel.dateChoose.LabelManager" x="717" y="278">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="hotel.dateChoose.MyLabel"
+            endpointName="list" kind="Simple"/>
+        <Communication destinationClassName="hotel.dateChoose.MyLabel"/>
+    </Class>
+    <Class name="hotel.dateChoose.JP2" x="753" y="490">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="hotel.dateChoose.JP1" x="736" y="427">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="hotel.dateChoose.JP4" x="700" y="532">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="hotel.dateChoose.JP3" x="725" y="360">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="hotel.dateChoose.LabelManager"/>
+    </Class>
+    <Class name="hotel.hotel" x="262" y="194">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="hotel.Customer" x="121" y="200">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="hotel.list" x="129" y="338">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="hotel.frame" x="101" y="429">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="hotel.dateChoose"
+            endpointName="dateChooser1" kind="Simple"/>
+        <Association destinationClassName="hotel.dateChoose"
+            endpointName="dateChooser2" kind="Simple">
+            <Point x="400" y="445"/>
+        </Association>
+        <Communication destinationClassName="hotel.dateChoose"/>
+    </Class>
+</ClassDiagram>
